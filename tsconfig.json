@@ -1,12 +1,14 @@
 {
     "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "declaration": true,
-      "outDir": "./lib",
-      "strict": true,
-      "lib": ["es6"]
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": true,
+        "outDir": "./lib",
+        "strict": true,
+        "lib": ["es6"],
+        "types": ["@types/jest", "jest"],
+        "typeRoots": ["./types", "./node_modules/@types"]
     },
-    "include": ["src"],
-    "exclude": ["node_modules", "**/__tests__/*"]
-  }
+    // "include": ["./src"],
+    // "exclude": ["node_modules", "**/*.test.ts"],
+}
